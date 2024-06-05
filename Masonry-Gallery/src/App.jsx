@@ -45,7 +45,7 @@ function App() {
   return (
     <section className="m-10 xl:mx-52 my-20">
       <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
-        <Masonry gutter={30}>
+        <Masonry gutter="2rem">
           {Object.values(gallery).map((img, index) => (
             <img
               onClick={() => setSelectedImage(img)}
